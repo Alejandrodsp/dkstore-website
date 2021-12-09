@@ -1,0 +1,172 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+:root{
+    --cor0:#F6B825;
+    --cor1:#ECC56A;
+    --cor2:#E8AD23;
+    --cor3:#69572F;
+    --cor4:#B5871B;
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', 'cursive';
+    }
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+ font-family: var(--fonte-padrao);
+}
+
+.bar-top{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    background-color: var(--cor3);
+    text-align: center;
+}
+
+.bar-top a{
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 0.8em;
+    text-decoration: none;
+    color:white;
+    cursor: pointer;
+}
+
+#duvidas::before{
+   content: '\2754\00A0';
+}
+
+.main-bar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    background-color: var(--cor0);
+    text-align: center;
+}
+
+.logo{
+    padding-left: 20%;
+    padding-right: 5%;
+}
+
+.search{
+    padding: 10px;
+    margin-top: 1%;
+    width: 30%;
+    height: 40px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.search input{
+    font-size: 14p;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    padding-right: 70%;
+}
+
+.search button{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 27%;
+    top: 30px;
+    background-color: white;
+    border: none;
+    color: var(--cor2);
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.wishlist a{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    bottom: -10px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.wishlist a::before{
+    content: '\1F90D\00A0';
+}
+
+.usermenu a{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px;
+    bottom: -7px;
+    right: 330px;
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+.usermenu a::before{
+    content: '\1F464\00A0';
+}
+
+.count{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    right: 300px;
+    bottom: 40px;
+}
+
+.navbar{
+    padding: 10px;
+    text-align: center;
+    border-style: groove;
+    border-left: none;
+    border-right: none;
+    border-width:thin;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: rgb(65, 63, 63);
+    margin: 0 25px 0 25px;
+    font-weight: bolder;
+}
+
+#slider{
+    background-color: var(--cor0);
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    height: 500px;
+    width: 90%;
+    margin-left: 5%;
+    position: sticky;
+}
+
+#slider img {
+    opacity: 0;
+    bottom: 0px;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    object-fit: scale-down;
+    margin: auto;
+}
+
+#slider img.selected{
+    opacity: 1;
+}
